@@ -28,10 +28,8 @@
 
           shellHook = ''
             export XDG_CONFIG_HOME="$PWD/config"
+            export GIT_CONFIG_GLOBAL="$HOME/.config/git/config"
             mkdir -p "$XDG_CONFIG_HOME/quickshell"
-
-            echo "XDG_CONFIG_HOME is now: $XDG_CONFIG_HOME"
-            echo "Quickshell will read from ./config/quickshell/"
           '';
         };
       });
