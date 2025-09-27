@@ -27,11 +27,11 @@
           ];
 
           shellHook = ''
-            export XDG_CONFIG_HOME="$PWD/.xdg"
+            export XDG_CONFIG_HOME="$PWD/config"
             mkdir -p "$XDG_CONFIG_HOME/quickshell"
 
             echo "XDG_CONFIG_HOME is now: $XDG_CONFIG_HOME"
-            echo "Quickshell will read from ./.xdg/quickshell/"
+            echo "Quickshell will read from ./config/quickshell/"
           '';
         };
       });
